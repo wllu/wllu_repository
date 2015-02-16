@@ -1,0 +1,22 @@
+﻿<Window x:Name="Download1" x:Class="myMes.Download"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Download" Height="322.403" Width="456.239" Loaded="Download1_Loaded" WindowStyle="ToolWindow" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Куда сохраняем:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
+        <TextBox x:Name="pathbox" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="362,31,0,0" VerticalAlignment="Top" Width="61" Click="Button_Click" Height="23"/>
+        <Label x:Name="friendIdLabel" Content="Id друга: " HorizontalAlignment="Left" Margin="239,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.395,-0.397" Height="26" Width="60"/>
+        <Label x:Name="countMesLabel" Content="Всего сообщений: " HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Height="26" Width="113"/>
+        <Label Content="timeout запросов (мс):" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Height="26" Width="133"/>
+        <TextBox x:Name="timeout" HorizontalAlignment="Left" Height="23" Margin="156,75,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="57"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="362,77,0,0" VerticalAlignment="Top" Width="61" Background="#FFA7FF9E" Height="20" Click="Button_Click_1"/>
+        <ListBox x:Name="all" HorizontalAlignment="Left" Height="135" Margin="10,143,0,0" VerticalAlignment="Top" Width="424"/>
+        <Label x:Name="frId" Content="" HorizontalAlignment="Left" Margin="304,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="mscCo" Content="" HorizontalAlignment="Left" Margin="123,112,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
